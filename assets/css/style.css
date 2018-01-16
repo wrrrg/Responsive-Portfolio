@@ -1,0 +1,263 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/* Placeholder fades */
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(0,0,0,.3);
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(0,0,0,.3);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(0,0,0,.3);
+}
+
+/* actual CSS */
+
+body {
+  font-family:  'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #777777;
+  margin: 0;
+  background-image: url('../images/fresh_snow.png')
+
+}
+
+a:hover {
+  color: #8bc3bb;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Times New Roman', 'Georgia', Times, serif;
+}
+
+/* Header CSS */
+header {
+  background: #ffffff;
+  border-bottom: #cccccc 3px solid;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 2
+}
+
+
+header a {
+  color: #888888;
+  text-decoration: none;
+}
+
+header h1 {
+  background: #4aaaa5;
+  color: white;
+  width: 200px;
+  padding: 20px 30px;
+  margin: 0 90px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+header ul {
+  box-sizing: content-box;
+  position: fixed;
+  top: 0;
+  right: 100px;
+  margin-right: 100px;
+  margin-top: 25px;
+  list-style: none;
+}
+
+header ul li {
+  display: inline;
+  margin: 15px;
+}
+
+.li-vertical-borders {
+  border-left: rgba(200,200,200,.6) 1px solid;
+  border-right: rgba(200,200,200,.6) 1px solid;
+  padding: 20px;
+}
+
+/* Main Content CSS */
+
+.container {
+  width: 960px;
+  margin: 50px auto;
+  overflow: hidden;
+  position: relative;
+  top: 75px;
+  bottom: 100px;
+  z-index: 0;
+}
+
+.main-content {
+  background: #ffffff;
+  width: 608px;
+  overflow: hidden;
+  padding: 20px;
+  margin-bottom: 100px;
+  border: 1px solid #dddddd;
+  float: left;
+}
+
+.main-content-h1 {
+  font-size: 32px;
+  color: #4aaaa5;
+  border-bottom: #dddddd 3px solid;
+  padding-bottom: 15px;
+}
+
+#bill-jpg {
+  width: 200px;
+  float: left;
+  margin-right: 10px;
+}
+
+/* Main Content Aside */
+aside {
+  background: #ffffff;
+  width: 230px;
+  float: right;
+  padding: 20px;
+  border: 1px solid #dddddd;
+}
+
+
+.connect-h2 {
+  color: #4aaaa5;
+  border-bottom: #dddddd 1px solid;
+  padding-bottom: 15px;
+}
+
+.connect-link {
+  width: 64px;
+  display: inline;
+}
+
+
+/* Portfolio Main CSS */
+
+.main-content-portfolio h1{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.portfolio-image-links {
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  display: grid;
+  grid-row-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 100vh; */
+}
+
+.portfolio-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 279px;
+  position: relative;
+}
+
+.portfolio-text {
+  background: none repeat scroll 0 0 #4aaaa5;
+  opacity: 0.8;
+  top:120px;
+  width: 200px;
+  padding: 0;
+  text-align: center;
+  left: 40px;
+  text-align: top;
+  color: white;
+  position: absolute;
+}
+
+.portfolio-text h3 {
+  padding: 3px;
+  margin: 3px;
+}
+
+/* .portfolio-img-and-text {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 100%;
+  background-color: #4aaaa5;
+  color: white;
+} */
+
+/* Contact Page CSS */
+/*
+.contact-content {
+  padding: 20px;
+} */
+
+.contact-text {
+  padding: 5px;
+  width: 598px;
+  border: 1px solid #bbbbbb;
+  /* margin-right: 16px; */
+}
+
+.contact-message {
+  height: 200px;
+  width: 605px;
+  border: 1px solid #bbbbbb;
+}
+
+.submit-btn {
+  font-size: 16px;
+  color: #ffffff;
+  background: #4aaaa5;
+  border: none;
+  width: 120px;
+  height: 40px;
+  margin-top: 20px;
+}
+
+/* Footer CSS */
+
+footer {
+  background: #666666;
+  text-align: center;
+  position:fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  border-top: #4aaaa5 8px solid;
+  padding: 20px;
+}
+
+.footer-p {
+  font-weight: 100;
+  color: #CCCCCC;
+  font-size: .7rem;
+}
