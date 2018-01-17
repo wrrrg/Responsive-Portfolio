@@ -47,9 +47,10 @@ body {
   color: #777777;
   margin: 0;
   background-image: url('../images/fresh_snow.png');
-  padding-bottom: 120px;
 
 }
+
+
 
 a:hover {
   color: #8bc3bb;
@@ -219,20 +220,10 @@ aside {
   margin: 3px;
 }
 
-/* .portfolio-img-and-text {
-  position: absolute;
-  top: 150px;
-  left: 0;
-  width: 100%;
-  background-color: #4aaaa5;
-  color: white;
-} */
 
-/* Contact Page CSS */
-/*
-.contact-content {
-  padding: 20px;
-} */
+
+
+/* Contact CSS */
 
 .contact-text {
   padding: 5px;
@@ -274,4 +265,110 @@ footer {
   font-weight: 100;
   color: #CCCCCC;
   font-size: .7rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* Main Content CSS */
+
+  .main-container {
+    width: 720px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    /* position: relative;
+    top: 75px;
+    bottom: 100px;
+    z-index: 0; */
+  }
+
+  /* .main-container p {
+    padding: 20px;
+    word-break: break-all;
+    white-space: normal;
+    display: inline-block;
+  } */
+
+  .main-content {
+    background: #ffffff;
+    width: 100%;
+    max-width: 700px;
+    word-wrap: break-word;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    float: left;
+  }
+
+  .main-content-h1 {
+    font-size: 32px;
+    color: #4aaaa5;
+    border-bottom: #dddddd 3px solid;
+    padding-bottom: 15px;
+    width: 680px;
+  }
+
+  #bill-jpg {
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+  }
+
+  /* Main Content Aside */
+  aside {
+    float: left;
+    background: #ffffff;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    margin-bottom: 80px;
+  }
+
+
+
+
+  .connect-h2 {
+    color: #4aaaa5;
+    border-bottom: #dddddd 1px solid;
+    padding-bottom: 15px;
+    width: 650px;
+
+  }
+
+  .connect-link {
+    display: inline-flex;
+
+  }
+
+  /* Contact CSS */
+
+  .contact-message {
+    height: 200px;
+    width: 100%;
+    max-width: 675px;
+    border: 1px solid #bbbbbb;
+  }
+
+  .contact-text {
+
+    width: 100%;
+    max-width: 670px;
+    border: 1px solid #bbbbbb;
+    /* margin-right: 16px; */
+  }
+
+  .submit-btn {
+    font-size: 16px;
+    color: #ffffff;
+    background: #4aaaa5;
+    border: none;
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+  }
+
+
+
 }
