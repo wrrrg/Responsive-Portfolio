@@ -269,7 +269,7 @@ footer {
 
 
 @media only screen and (max-width: 768px) {
-  /* Main Content CSS */
+  /* Main Content CSS 768px */
 
   .main-container {
     width: 720px;
@@ -342,7 +342,7 @@ footer {
 
   }
 
-  /* Contact CSS */
+  /* Contact CSS 768px */
 
   .contact-message {
     height: 200px;
@@ -369,6 +369,48 @@ footer {
     margin-top: 20px;
   }
 
+/* Portfolio CSS 768px */
+/* Portfolio Main CSS */
 
+  .main-content-portfolio h1{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .portfolio-image-links {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 100vh; */
+  }
+
+  .portfolio-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+
+  .portfolio-text {
+    background: none repeat scroll 0 0 #4aaaa5;
+    opacity: 0.8;
+    top:120px;
+    width: 200px;
+    padding: 0;
+    text-align: center;
+    left: 75px;
+    text-align: top;
+    color: white;
+    position: absolute;
+  }
+
+  .portfolio-text h3 {
+    padding: 3px;
+    margin: 3px;
+  }
 
 }
