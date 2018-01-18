@@ -115,7 +115,7 @@ header ul li {
 .li-vertical-borders {
   border-left: rgba(200,200,200,.6) 1px solid;
   border-right: rgba(200,200,200,.6) 1px solid;
-  padding: 5px 20px;
+  padding: 1px 20px;
 
 }
 
@@ -140,6 +140,11 @@ header ul li {
   margin-bottom: 100px;
   border: 1px solid #dddddd;
   float: left;
+}
+
+.main-content p {
+  padding: 5px;
+  margin: 5px;
 }
 
 .main-content-h1 {
@@ -198,9 +203,11 @@ aside {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
   position: relative;
 }
+
 
 .portfolio-text {
   background: none repeat scroll 0 0 #4aaaa5;
@@ -403,6 +410,226 @@ footer {
     padding: 0;
     text-align: center;
     left: 75px;
+    text-align: top;
+    color: white;
+    position: absolute;
+  }
+
+  .portfolio-text h3 {
+    padding: 3px;
+    margin: 3px;
+  }
+
+}
+
+@media only screen and (max-width: 640px) {
+
+  /* Header CSS 640 */
+
+  .header-container {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  header {
+    background: #ffffff;
+    border-bottom: #cccccc 3px solid;
+    /* width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 2 */
+  }
+
+
+  header a {
+    color: #888888;
+    text-decoration: none;
+  }
+
+  header h1 {
+    background: #4aaaa5;
+    color: white;
+    width: 100%;
+    max-width: 640px;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  header ul {
+    box-sizing: content-box;
+    /* position: fixed;
+    top: 0;
+    right: 100px; */
+
+    /* margin-right: 100px; */
+    margin-top: 15px;
+    list-style: none;
+    /* line-height: 1; */
+    max-height: 40px;
+    width: 100%;
+    max-width: 640px;
+    text-align: center;
+  }
+
+  header ul li {
+    float: left;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 30%;
+
+  }
+
+  .li-vertical-borders {
+    border-left: rgba(200,200,200,.6) 1px solid;
+    border-right: rgba(200,200,200,.6) 1px solid;
+    padding: 1px 20px;
+
+  }
+
+
+  /* Main Content CSS 640px */
+
+  .main-container {
+    width: 580px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    /* position: relative;
+    top: 75px;
+    bottom: 100px;
+    z-index: 0; */
+  }
+
+  /* .main-container p {
+    padding: 20px;
+    word-break: break-all;
+    white-space: normal;
+    display: inline-block;
+  } */
+
+  .main-content {
+    background: #ffffff;
+    width: 100%;
+    max-width: 565px;
+    word-wrap: normal;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    float: left;
+  }
+
+  .main-content-h1 {
+    font-size: 32px;
+    color: #4aaaa5;
+    border-bottom: #dddddd 3px solid;
+    padding-bottom: 15px;
+    width: 580px;
+  }
+
+  #bill-jpg {
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+  }
+
+  /* Main Content Aside */
+  aside {
+    float: left;
+    background: #ffffff;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    margin-bottom: 80px;
+  }
+
+
+
+
+  .connect-h2 {
+    color: #4aaaa5;
+    border-bottom: #dddddd 1px solid;
+    padding-bottom: 15px;
+    width: 650px;
+
+  }
+
+  .connect-link {
+    display: inline-flex;
+
+  }
+
+  /* Contact CSS 640px */
+
+  .contact-message {
+    height: 200px;
+    width: 100%;
+    max-width: 530px;
+    border: 1px solid #bbbbbb;
+  }
+
+  .contact-text {
+
+    width: 100%;
+    max-width: 525px;
+    border: 1px solid #bbbbbb;
+    /* margin-right: 16px; */
+  }
+
+  .submit-btn {
+    font-size: 16px;
+    color: #ffffff;
+    background: #4aaaa5;
+    border: none;
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+  }
+
+  #contact-h1 {
+    width: 535px;
+  }
+
+/* Portfolio CSS 640px */
+/* Portfolio Main CSS */
+
+  .main-content-portfolio h1{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .portfolio-image-links {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 100vh; */
+  }
+
+  .portfolio-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .portfolio-text {
+    background: none repeat scroll 0 0 #4aaaa5;
+    opacity: 0.8;
+    top:150px;
+    width: 200px;
+    padding: 0;
+    text-align: center;
+    left: 183px;
     text-align: top;
     color: white;
     position: absolute;
