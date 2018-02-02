@@ -393,11 +393,15 @@ footer {
     /* grid-template-rows: 100vh; */
   }
 
+
+
   .portfolio-img {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    max-width: 200px;
+    max-height: 200px;
     position: relative;
   }
 
